@@ -107,7 +107,7 @@ a{
 
 
 /* MENU HAMBURGUER */
-/* .nav {
+.nav {
   max-width: 1280px;
   height: 70px;
   margin-inline: auto;
@@ -116,23 +116,18 @@ a{
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  font-size: 48px;
-}
-
 .nav-list {
-  display: flex;
-  gap: 32px;
+  display: none;
   list-style: none;
+  flex-direction: column;
+  
 }
 
 .nav-list a {
   font-size: 18px;
   color: #fff;
-  padding-block: 16px;
+  padding-block: 1px;
 }
-
 .hamburger {
   display: none;
   border: none;
@@ -153,13 +148,17 @@ a{
   transition: 0.3s;
 }
 
-@media (max-width: 750px) {
-  .nav {
-    display: block;
-    z-index: 1;
-  }
-
-  .nav-list {
+/* Responsividade Menu Navegação*/ 
+@media screen and (max-width:730px) {
+    .menuNavegacao{
+        display: none;
+        
+    }
+    .hamburger{
+        display: block;
+        
+    }
+    .nav-list {
     position: fixed;
     top: 0;
     left: 0;
@@ -177,7 +176,7 @@ a{
     pointer-events: none;
   }
 
-  .nav-list a {
+.nav-list a {
     font-size: 24px;
     opacity: 0;
   }
@@ -185,7 +184,6 @@ a{
   .nav-list li:nth-child(1) a {
     transition: 0.5s 0.2s;
   }
-
   .nav-list li:nth-child(2) a {
     transition: 0.5s 0.4s;
   }
@@ -196,7 +194,7 @@ a{
 
   /* Estilos ativos */
 
-  /* .nav.active .nav-list {
+  .nav.active .nav-list {
     clip-path: circle(1500px at 90% -15%);
     pointer-events: all;
   }
@@ -220,41 +218,6 @@ a{
     transform: rotate(-135deg);
     top: -7px;
   }
-} */
-
-
-/* Responsividade Menu Navegação*/ 
-@media screen and (max-width:730px) {
-    /* .navIten{
-        display: none;
-        
-    } */
-    .mobileIcon{
-        display: flex;
-        
-    }
-    .mobileIcon button{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobileMenu ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 1rem;
-        list-style: none;
-        
-    }
-    /* .mobileMenu .navIten{
-        display: block;
-        padding-top: 1.7rem;
-        list-style: none;
-        
-    } */
-    .open{
-        display: block;
-    }
 }
 
 /*Responsividade Cabeçalho*/
