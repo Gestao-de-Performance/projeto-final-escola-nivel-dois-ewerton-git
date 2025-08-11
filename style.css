@@ -87,10 +87,11 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 1rem 1rem;
+    margin-inline: 20px;
     
     
 }
-.logo li{
+.logo {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -99,15 +100,11 @@ a{
 .menuNavegacao ul{
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 30px;
 }
 
-.navIten{
-    margin: 0 15px ;
-    width: 1px;
-    height: 1px;
 
-}
 
 /* MENU HAMBURGUER */
 /* .nav {
@@ -228,10 +225,10 @@ a{
 
 /* Responsividade Menu Navegação*/ 
 @media screen and (max-width:730px) {
-    .navIten{
+    /* .navIten{
         display: none;
         
-    }
+    } */
     .mobileIcon{
         display: flex;
         
@@ -249,12 +246,12 @@ a{
         list-style: none;
         
     }
-    .mobileMenu .navIten{
+    /* .mobileMenu .navIten{
         display: block;
         padding-top: 1.7rem;
         list-style: none;
         
-    }
+    } */
     .open{
         display: block;
     }
